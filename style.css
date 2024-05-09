@@ -44,6 +44,7 @@ main img {
     border: 1px solid steelblue;
     padding: 2px;
     box-shadow: 0.0.30px gray;
+    /* you may likely will have other declaration here */
     float: right;
     margin: 0 0 1rem 1rem;
 }
