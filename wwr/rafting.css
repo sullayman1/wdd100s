@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Roboto:ital@0;1&display=swap");
+
+:root {
+  --heading-font: "Open Sans", Arial, sans-serif;
+  --paragraph-font: "Roboto", Verdana, sans-serif;
+
+  --primary-color: #666b6a;
+  --secondary-color: #72a276;
+  --accent1-color: #86cd82;
+  --accent2-color: #8ae9c1;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+p {
+  font-family: var(--paragraph-font);
+  color: var(--primary-color);
+}
+
+body {
+  position: relative;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: 400px;
+}
+
+.hero h1 {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  text-align: center;
+  color: var(--primary-color);
+  background-color: rgba(255, 255, 255, 0.671);
+}
+
+.hero article img {
+  width: 250px;
+  height: auto;
+  float: right;
+  margin-left: 1px;
+}
+
+article {
+  position: absolute;
+  padding: 20px;
+  top: 190px;
+  background-color: #ebc20f46;
+  width: 60%;
+  left: 36%;
+  
+}
+
+article p {
+  color: #ffffffc0;
+}
+
+a {
+  text-decoration: none;
+  font-size: larger;
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  padding: 5px;
+}
+
+header{
+  display: grid;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgba(63, 182, 16, 0.089);
+  padding: 5px;
+  border-radius: 10px;
+}
+header img{
+  grid-column: 1/2;
+  padding: 5px;
+  mix-blend-mode: color-burn;
+}
+header nav{
+  grid-column: 2/3;
+}
+header nav a{
+  border: 2px solid #a3aca8;
+  margin-left: 10px;
+  border-radius: 30px;
+}
+
+nav{
+  display: flex;
+}
+
+footer{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  border-top: 2px solid var(--secondary-color);
+  padding-top: 15px;
+}
+footer a img{
+  width: 25px;
+  
+}
+header, main, footer{
+  width: 90%;
+  margin: auto;
+}
+section h2{
+  text-align: center;
+  border-bottom: 1px dashed var(--secondary-color);
+  padding-bottom: 20px;
+}
+.history p{
+  border-bottom: 1px dashed var(--secondary-color);
+  padding-bottom: 20px;
+}
+
+.adventure{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  overflow: auto;
+
+}
+.adventure figure {
+  width: fit-content;
+}
+.adventure a img{
+  width: 300px;
+  aspect-ratio: 2/1;
+  object-fit: contain;
+}
+pic{
+  width: 100%;
+}
+figcaption {
+    color:var(--primary-color);
+    font-family: var(--paragraph-font);
+    text-align: center;
+}
+
+/*The Contact Us page*/
+
+#contact fieldset{
+  display: grid;
+  grid-area: 1/2;
+  grid-gap: 20px;
+}
+
+#contact #checkbox{
+  padding: 15px;
+  text-align: center;
+  grid-column: 1/3;
+}
+
+#contact #radio{
+  display: grid;
+  grid-template-columns: 2fr 1fr ;
+  grid-gap: 15px;
+}
+
+#contact .Contact{
+  display: flex;
+  justify-content: space-around;
+}
+
+#contact button{
+  border:thin solid;
+  border-radius: 1rem;
+  padding: 0.7rem;
+  display: block;
+  margin: 1rem auto;
+  background-color: rgba(63, 182, 16, 0.089);
+}
+
+#contact #container{
+  display: grid;
+  grid-area: 1/2;
+  grid-gap: 1.2rem;
+}
+
+#contact #container iframe{
+  grid-column: 2/3;
+  grid-row: 1/1;
+  width: 100%;
+  height: 100%;
+}
+
+#contact #container fieldset, form{
+  grid-column: 1/2;
+}
+#contact .second{
+  grid-column: 1/3;
+}
+
+#contact .imagesCU{
+  width: 18rem;
+}
+#contact #images{
+  grid-column: 1/3;
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: auto;
+}
+
+#contact fieldset p a {
+  font-size: 1rem;
+  color: blue;
+  text-decoration:underline;
+  font-family: initial;
+}
+
+#contact form{
+  background-color: rgba(63, 182, 16, 0.089);
+  border-radius: 0.5rem;
+  grid-column: 1/3;
+  width: 80%;
+  margin: auto;
+}
