@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Rafting Adventures</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Common Header -->
+    <header>
+        <div class="container">
+            <h1>Rafting Adventures</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="tours.html">Tours</a></li>
+                    <li><a href="contact.html" class="active">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <section id="company-info">
+            <h2>Sierra Leone</h2>
+            <p>123 Makeni<br>
+            Auuurtjref<br>
+            Phone: 0975788888888<br>
+            Email: info@jjdfdfkdkjj.com</p>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15767.528418004067!2d-12.0382815!3d8.89055205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ssl!4v1717513249228!5m2!1sen!2ssl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <section id="employee-profiles">
+            <h2>Meet Our Team</h2>
+            <div class="employee">
+                <img src="image/me yo.jpg" alt="Employee 1">
+                <p>John Doe<br>Tour Guide</p>
+            </div>
+            <div class="employee">
+                <img src="image/me yo.jpg" alt="Employee 2">
+                <p>Jane Smith<br>Customer Service</p>
+            </div>
+            <div class="employee">
+                <img src="image/me yo.jpg" alt="Employee 3">
+                <p>Mark Johnson<br>Instructor</p>
+            </div>
+        </section>
+
+        <section id="contact-form">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="purpose">Purpose:</label><br>
+                    <input type="radio" id="inquiry" name="purpose" value="inquiry" checked>
+                    <label for="inquiry">General Inquiry</label><br>
+                    <input type="radio" id="reservation" name="purpose" value="reservation">
+                    <label for="reservation">Reservation Question</label><br>
+                    <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                    <label for="suggestion">Website Suggestion</label><br>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                </div>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </section>
+    </div>
+
+    <!-- Common Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Rafting Adventures. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
