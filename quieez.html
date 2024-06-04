@@ -2,41 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Basic Quiz Question, Sullayman Samai, WDD130">
-    <meta name="author" content="Sullayman Samai">
+    <title>Quiz</title>
     <link rel="stylesheet" href="quiz.css">
-    <title>Basic HTML and CSS Quiz</title>
 </head>
 <body>
-    <header>
-        <h1>Basic HTML and CSS Quiz</h1>
-    </header>
-    <main>
-        <form>
-        <ol>
-            <li><label for="q1">What is the acronym CSS stand for?</label>
-                <input type="text" name="q1" id="q1"></li>
-            <li> <label for="q2">How are id and class attributes selected in CSS?</label>
-                <textarea name="q2" id="q2" rows="5"></textarea></li>
-            <li> <label for="q3">Which of the following is a valid CSS comment?</label>
-                <select name="q3" id="q3" >
-                    <option value="">// This is a single-line comment //</option> 
-                    <option value="">*/ This is a single-line comment /*</option> 
-                    <option value="">/* This is a single-line comment */</option> 
-                </select></li>
-            <li>
-                <label for="q4">What is the bottom margin given in this declaration?</label>
-                <p>margin:10px 5px 15px;</p>
-                <input type="number" name="q4" id="q4">
-            </li>
-        </ol>
-        <button type="submit">Submit Quiz</button>
-        </form>
-    </main>
-    <footer>
-        <p>©2024 |😎Sullayman| Basic HTML and CSS Quiz</p>
-    </footer>
+    <h1>Quiz</h1>
+    <form action="#" method="post" id="quiz-form">
+        <div class="form-group">
+            <label for="q1">Fill in the blank:</label>
+            <input type="text" id="q1" name="q1" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="q2">Short answer question:</label>
+            <textarea id="q2" name="q2" class="form-control" rows="4" cols="50"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="q3">Select an option:</label>
+            <select id="q3" name="q3" class="form-control">
+                <option value="" selected disabled>Choose One ...</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="html_css">HTML & CSS</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="q4">Integer answer:</label>
+            <input type="number" id="q4" name="q4" class="form-control" min="0">
+        </div>
+        <button type="submit" class="submit-btn">Submit Quiz</button>
+    </form>
 </body>
 </html>

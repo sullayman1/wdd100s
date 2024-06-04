@@ -1,100 +1,52 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Roboto:ital@0;1&display=swap");
-
-*{
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f7f7f7;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#quiz-form {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     box-sizing: border-box;
 }
 
-body{
-    font-family:'Roboto', sans-serif;
-    background-color: #ffff;
-    font-size: larger;
-    color: #333;
-    align-items: center;
-}
-header{
-    margin: auto;
-    width: 650px;
-}
-h1{
-    margin: 1rem;
-    font-size: 1.5rem;
-    color: navy;
-    text-align: center;
-}
-
-form{
-    width:650px;
-    height: auto;
-    margin: auto;
-    padding: 15px;
-    border: 2px solid transparent;
-    border-radius: 1rem;
-    background-color: lightgray;
-    display: grid;
-}
-
-legend{
-    padding: 1rem;
-    color: navy;
-}
-fieldset{
-    display: grid;
-    grid-gap: 1rem;
-    padding: 1rem;
-    margin: 1rem;
-}
-label{
-    text-align: right;
-    padding-right: 1rem;
-}
-input, select, textarea{
-    padding: 0.5rem;
-    font-size: 1.1rem;
-}
-input[type="checkbox"]{
-    width: 22px;
-    height: 22px;
-    vertical-align: bottom;
-}
-button{
+.submit-btn {
     display: block;
-    background-color: navy;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
     color: #fff;
-    border: transparent;
-    border-radius: 0.5rem;
-    padding: 0.7rem;
-    margin: 1.5rem auto;
-    justify-items: center;
-    font-size: large;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
-button:hover{
-    background-color: lightblue;
-}
-footer{
-    width: 650px;
-    margin: auto;
-    margin-top: 1rem;
-    padding-top: 1rem;
-    border-top: 1px solid lightgray;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1rem;
-    text-align: center;
-}
-/* Class Selectors */
-.form-item{
-    display: grid;
-    align-items: center;
-}
-.column1{
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-}
-.column2{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-}
-.places_lived{
-    text-align: center;
+
+.submit-btn:hover {
+    background-color: #0056b3;
 }
